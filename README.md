@@ -1,1 +1,1 @@
-# wechat-facial-recognition
+# Study Room Mini Program
