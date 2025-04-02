@@ -1,0 +1,51 @@
+# 应用服务 WEB 访问端口
+server:
+  port: 8080
+
+# spring配置
+spring:
+  # 项目名称
+  application:
+    name: study-room-mini-program
+
+  # 数据库配置
+  datasource:
+    url: jdbc:mysql://localhost:3306/study_room
+    username: demo
+    password: demo
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+# springdoc配置
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+    tags-sorter: alpha
+    operations-sorter: alpha
+  api-docs:
+    path: /v3/api-docs
+  group-configs:
+    - group: 'default'
+      paths-to-match: '/**'
+      packages-to-scan: study.room.demo
+
+# Mybatis-Plus日志配置
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    db-config:
+      id-type: auto
+
+# knife4j配置
+knife4j:
+  enable: true
+  production: false
+  basic:
+    enable: true
+    username: knife4j
+    password: knife4j
+  setting:
+    language: zh_cn
+    enable-version: true
+    enable-swagger-models: true
+
