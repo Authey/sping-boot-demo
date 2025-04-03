@@ -1,1 +1,1 @@
-# Study Room Mini Program
+# Spring Boot + Vue Demo

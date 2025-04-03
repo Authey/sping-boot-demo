@@ -6,11 +6,11 @@ server:
 spring:
   # 项目名称
   application:
-    name: study-room-mini-program
+    name: spring-boot-demo-program
 
   # 数据库配置
   datasource:
-    url: jdbc:mysql://localhost:3306/study_room
+    url: jdbc:mysql://localhost:3306/spring_vue
     username: demo
     password: demo
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -26,7 +26,7 @@ springdoc:
   group-configs:
     - group: 'default'
       paths-to-match: '/**'
-      packages-to-scan: study.room.demo
+      packages-to-scan: spring.boot.demo
 
 # Mybatis-Plus日志配置
 mybatis-plus:
