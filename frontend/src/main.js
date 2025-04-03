@@ -5,6 +5,7 @@ import App from './App.vue';
 import Router from "@/router/index.js";
 import {createPinia} from 'pinia';
 import {createPersistedState} from "pinia-persistedstate-plugin";
+import 'remixicon/fonts/remixicon.css'
 
 const pinia = createPinia()
 const persist = createPersistedState()

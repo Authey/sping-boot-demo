@@ -42,6 +42,17 @@ public class UserController {
         return Response.success(token);
     }
 
+    @PostMapping(value = "/wxLogin")
+    public Response<String> wxLogin() {
+        Map<String, Object> claims = new HashMap<>();
+        claims.put("username", "wechat-login");
+
+        ThreadLocalUtil.set(claims);
+        String token = JwtUtil.getToken(claims);
+
+        return Response.success(token);
+    }
+
     @PostMapping(value = "/logout")
     public Response<String> logout() {
         ThreadLocalUtil.remove();

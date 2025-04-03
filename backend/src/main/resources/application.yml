@@ -49,3 +49,8 @@ knife4j:
     enable-version: true
     enable-swagger-models: true
 
+# 微信小程序配置
+wx-mini:
+  app-id: wxeda4c670ef032d5f
+  app-secret: de8fb6414138de299e2a2e57f03a22ad
+
